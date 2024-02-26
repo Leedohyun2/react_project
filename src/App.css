@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul,
+li {
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main_logo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  /* background: url(/public/images/champs_back.jpg); */
+  background: #011656;
+  background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
+.main_logo img {
+  width: 110px;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loginArea {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 18px;
+
+}
+
+.loginArea span {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.nav_wrap {
+  background: #012799;
+}
+
+.header_nav {
+  width: 60%;
+  margin: auto;
+}
+
+.header_nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header_nav ul li a {
+  color: #fff;
+  padding: 10px;
+  border: 2px solid #012799;
+}
+
+.header_nav ul li a:hover {
+  border: 2px solid #0476E8;
+  border-radius: 15px;
+}
+
+.home_wrap {
+  text-align: center;
+  background: url(/public/images/champ_back.jpg);
+  background-size: cover;
+}
+
+.main_img {
+  width: 50%;
+  color: #fff;
+  font-size: 25px;
+}
+
+.main_img img {
+  width: 100%;
+}
+
+.banner img{
+  width: 60%;
+}
+
+.mancity_logo img{
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  width: 80px;
+}
+
+.footer_container {
+  /* position: fixed;
+  bottom: 0; */
+  width: 100%;
+  background: #011656;
+  padding: 20px;
+}
+
+.footer_container p {
+  color: #fff;
+}
+
+.footer_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  padding: 10px 40px;
+}
+
+.footer_top span {
+  margin: 0 10px;
+}
+
+.footer_top img {
+  width: 90px;
+}
+
+.footer_top a,
+h3 {
+  color: #fff;
+}
+
+.footer_bottom {
+  width: 60%;
+  margin: 20px auto;
+  text-align: center;
 }
