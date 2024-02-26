@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons"; // faUser 아이콘을 사용합니다.
 import DraggableComponent from "./squardMaker";
+import DraggableComponent2 from "./squardMaker2";
 
 const Home = () => (
   <div className="home_wrap">
@@ -38,6 +39,7 @@ const SquadMaker = () => (
     </span>
     <div className="squard">
       <DraggableComponent />
+      <DraggableComponent2 />
     </div>
   </div>
 );

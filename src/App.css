@@ -76,6 +76,7 @@ a {
 
 .main_img {
   width: 50%;
+  margin: auto;
   color: #fff;
   font-size: 25px;
 }
@@ -85,7 +86,7 @@ a {
 }
 
 .banner img{
-  width: 60%;
+  width: 50%;
 }
 
 .mancity_logo img{
