@@ -4,7 +4,7 @@
 
 .sq_maker {
     position: relative;
-    margin: 20px;
+    margin: 30px;
     background: url('../public/images/squard_bg.png') no-repeat;
 }
 
@@ -20,5 +20,11 @@
 }
 
 .player_list {
-    height: 1000px;
+    height: 850px;
+}
+
+.player_infor {
+    background: skyblue;
+    border-radius: 0 0 15px 15px;
+    font-weight: bold;
 }

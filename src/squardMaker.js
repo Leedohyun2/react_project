@@ -27,7 +27,7 @@ const DraggableComponent = ({ src, name, defaultPosition, number }) => {
     >
       <div className="draggable-item">
         <img src={src} alt="" />
-        <p>
+        <p className="player_infor">
           {name}    {number}
         </p>
       </div>
