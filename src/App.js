@@ -3,15 +3,20 @@ import "./App.css";
 import "./squardMaker.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons"; // faUser 아이콘을 사용합니다.
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 import DraggableComponent from "./squardMaker";
 import DraggableComponent2 from "./squardMaker2";
+import PauseOnHover from "./slick.js";
 
 const Home = () => (
   <div className="home_wrap">
+    <PauseOnHover />
+    <h2 className="CLW">22-23 Champions League Winner</h2>
     <div className="main_img">
-      <h2>22-23 Champions League Winner</h2>
-      <img src="/images/mancity_winner.jpg" alt="" />
+      <span className="main_imgs">
+        <img src="/images/mancity_winner.jpg" alt="" />
+        <img src="/images/city_champion.jpg" alt="" />
+      </span>
     </div>
     <div className="banner">
       <img src="/images/banner.gif" alt="" />
@@ -36,6 +41,23 @@ const SquadMaker = () => (
     <h2>SquadMaker</h2>
     <span className="mancity_logo">
       <img src="/images/mancity.svg" alt="" />
+    </span>
+    <span className="team_list">
+      <h2>- 팀 명단 -</h2>
+      <ul>
+        <li>
+          <Link href="#none">맨체스터 시티</Link>
+        </li>
+        <li>
+          <Link href="#none">레알 마드리드</Link>
+        </li>
+        <li>
+          <Link href="#none">리버풀</Link>
+        </li>
+        <li>
+          <Link href="#none">AC밀란</Link>
+        </li>
+      </ul>
     </span>
     <div className="squard">
       <DraggableComponent />
@@ -138,7 +160,7 @@ const Footer = () => (
 
 const App = () => (
   <Router>
-    <div>
+    <div className="all_wrap">
       {/* 헤더 */}
       <header>
         <div className="header_wrap">

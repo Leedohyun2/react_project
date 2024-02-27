@@ -17,7 +17,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: url(/public/images/champs_back.jpg); */
   background: #011656;
   background-size: cover;
 }
@@ -74,22 +73,62 @@ a {
   background-size: cover;
 }
 
-.main_img {
-  width: 50%;
+/* 슬릭 css */
+.slider-container {
+  width: 80%;
   margin: auto;
+  background: #011656;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.slider-container div img {
+  width: 100px;
+  margin: auto;
+}
+
+.team_container h2 {
+  font-size: 18px;
+}
+
+.team_container h3{
+  font-size: 15px;
+  padding: 10px;
+}
+
+.team_img img{
+  background: #fff;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.main_imgs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main_img {
+  background: red;
+  width: 40%;
+  margin: 40px;
   color: #fff;
   font-size: 25px;
 }
 
 .main_img img {
   width: 100%;
+  margin: 0 20px;
+  border-radius: 20px;
 }
 
-.banner img{
+.banner img {
   width: 50%;
 }
 
-.mancity_logo img{
+.mancity_logo img {
   position: absolute;
   top: 80px;
   left: 30px;
