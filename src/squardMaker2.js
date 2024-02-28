@@ -39,68 +39,68 @@ const App = () => {
   return (
     <div className="player_list">
       <DraggableComponent2
-        src="/images/hollan.png"
-        name="엘링 홀란"
-        number="9"
-        defaultPosition={{ x: 560, y: 0 }}
+        src="/real/belling.png"
+        name="주드 벨링엄"
+        number="31"
+        defaultPosition={{ x: 560, y: 60 }}
       />
       <DraggableComponent2
-        src="/images/podden.png"
-        name="필 포든"
-        number="47"
-        defaultPosition={{ x: 200, y: -120 }}
+        src="/real/vini.png"
+        name="비니시우스"
+        number="7"
+        defaultPosition={{ x: 240, y: -120 }}
       />
       <DraggableComponent2
-        src="/images/kdb.png"
-        name="케빈 더브라위너"
-        number="17"
+        src="/real/modri.png"
+        name="루카 모드리치"
+        number="10"
         defaultPosition={{ x: 340, y: -100 }}
       />
       <DraggableComponent2
-        src="/images/dias.png"
-        name="후뱅 디아스"
+        src="/real/ruedi.png"
+        name="안토니오 뤼디거"
         number="3"
         defaultPosition={{ x: 360, y: -50 }}
       />
       <DraggableComponent2
-        src="/images/covaci.png"
-        name="코바치치"
+        src="/real/valve.png"
+        name="발베르데"
         number="8"
         defaultPosition={{ x: 780, y: -420 }}
       />
       <DraggableComponent2
-        src="/images/walker.png"
-        name="카일 워커"
+        src="/real/carva.png"
+        name="카르바할"
         number="2"
         defaultPosition={{ x: 950, y: -400 }}
       />
       <DraggableComponent2
-        src="/images/song.png"
-        name="에데르송"
-        number="31"
-        defaultPosition={{ x: 560, y: -400 }}
+        src="/real/courtu.png"
+        name="티보 쿠르투아"
+        number="1"
+        defaultPosition={{ x: 560, y: -380 }}
       />
       <DraggableComponent2
-        src="/images/dior.png"
-        name="그바르디올"
+        src="/real/cama.png"
+        name="카마빙가"
         number="24"
         defaultPosition={{ x: 100, y: -700 }}
       />
       <DraggableComponent2
-        src="/images/silva.png"
-        name="베르나르두 실바"
-        number="20"
-        defaultPosition={{ x: 890, y: -1220 }}
+        src="/real/hordi.png"
+        name="호드리구"
+        number="11"
+        defaultPosition={{ x: 850, y: -1220 }}
       />
       <DraggableComponent2
-        src="/images/rodri.png"
-        name="로드리"
-        number="16"
-        defaultPosition={{ x: 560, y: -1150 }}
+        src="/real/chua.png"
+        name="추아메니"
+        number="6"
+        defaultPosition={{ x: 560, y: -1110 }}
       />
       <DraggableComponent2
-        src="/images/stons.png"
-        name="존 스톤스"
+        src="/real/mille.png"
+        name="밀리탕"
         number="4"
         defaultPosition={{ x: 740, y: -1150 }}
       />

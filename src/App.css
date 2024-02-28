@@ -22,7 +22,7 @@ a {
 }
 
 .main_logo img {
-  width: 110px;
+  width: 130px;
   padding: 10px;
 }
 
@@ -71,6 +71,7 @@ a {
   text-align: center;
   background: url(/public/images/champ_back.jpg);
   background-size: cover;
+  color: #fff;
 }
 
 /* 슬릭 css */
@@ -111,15 +112,15 @@ a {
 }
 
 .main_img {
-  background: red;
-  width: 40%;
+  /* background: red; */
+  width: 50%;
   margin: 40px;
   color: #fff;
   font-size: 25px;
 }
 
 .main_img img {
-  width: 100%;
+  width: 90%;
   margin: 0 20px;
   border-radius: 20px;
 }

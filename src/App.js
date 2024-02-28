@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import "./squardMaker.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faUser } from "@fortawesome/free-solid-svg-icons";
 import DraggableComponent from "./squardMaker";
 import DraggableComponent2 from "./squardMaker2";
+import DraggableComponent3 from "./squardMaker3";
+import DraggableComponent4 from "./squardMaker4";
 import PauseOnHover from "./slick.js";
 
 const Home = () => (
   <div className="home_wrap">
     <PauseOnHover />
     <h2 className="CLW">22-23 Champions League Winner</h2>
+    <h2 className="CLW">- Manchester City -</h2>
     <div className="main_img">
       <span className="main_imgs">
         <img src="/images/mancity_winner.jpg" alt="" />
@@ -36,35 +39,51 @@ const Groups = () => (
   </div>
 );
 
-const SquadMaker = () => (
-  <div className="sq_maker">
-    <h2>SquadMaker</h2>
-    <span className="mancity_logo">
-      <img src="/images/mancity.svg" alt="" />
-    </span>
-    <span className="team_list">
-      <h2>- 팀 명단 -</h2>
-      <ul>
-        <li>
-          <Link href="#none">맨체스터 시티</Link>
-        </li>
-        <li>
-          <Link href="#none">레알 마드리드</Link>
-        </li>
-        <li>
-          <Link href="#none">리버풀</Link>
-        </li>
-        <li>
-          <Link href="#none">AC밀란</Link>
-        </li>
-      </ul>
-    </span>
-    <div className="squard">
-      <DraggableComponent />
-      <DraggableComponent2 />
+const SquadMaker = () => {
+  const [activeTab, setActiveTab] = useState(1);
+
+  const handleTabClick = tabNumber => {
+    setActiveTab(tabNumber);
+  };
+
+  return (
+    <div className="sq_maker">
+      <h2>SquadMaker</h2>
+      <div className="tab_menu">
+        <button
+          className={activeTab === 1 ? "active" : ""}
+          onClick={() => handleTabClick(1)}
+        >
+          맨체스터 시티
+        </button>
+        <button
+          className={activeTab === 2 ? "active" : ""}
+          onClick={() => handleTabClick(2)}
+        >
+          레알 마드리드
+        </button>
+        <button
+          className={activeTab === 3 ? "active" : ""}
+          onClick={() => handleTabClick(3)}
+        >
+          AT마드리드
+        </button>
+        <button
+          className={activeTab === 4 ? "active" : ""}
+          onClick={() => handleTabClick(4)}
+        >
+          인테르
+        </button>
+      </div>
+      <div className="squard">
+        {activeTab === 1 && <DraggableComponent />}
+        {activeTab === 2 && <DraggableComponent2 />}
+        {activeTab === 3 && <DraggableComponent3 />}
+        {activeTab === 4 && <DraggableComponent4 />}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 const Footer = () => (
   <div className="footer_container">
@@ -169,10 +188,10 @@ const App = () => (
               <img src="/images/champ_logo.png" alt="" />
             </Link>
             <span className="loginArea">
-              <Link to="/">
+              {/* <Link to="/">
                 <span>Login</span>
                 <FontAwesomeIcon icon={faUser} style={{ color: "#fff" }} />
-              </Link>
+              </Link> */}
             </span>
           </span>
           <div className="nav_wrap">
