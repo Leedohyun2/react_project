@@ -92,11 +92,13 @@ a {
 
 .team_container h2 {
   font-size: 18px;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .team_container h3{
   font-size: 15px;
   padding: 10px;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .team_img img{
