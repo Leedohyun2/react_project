@@ -1,13 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./App.css";
 import "./squardMaker.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import html2canvas from "html2canvas";
+import saveAs from "file-saver";
 import DraggableComponent from "./squardMaker";
 import DraggableComponent2 from "./squardMaker2";
 import DraggableComponent3 from "./squardMaker3";
 import DraggableComponent4 from "./squardMaker4";
+import Capture from "./Capture.js";
 import PauseOnHover from "./slick.js";
 
 const Home = () => (
@@ -49,6 +52,7 @@ const SquadMaker = () => {
   return (
     <div className="sq_maker">
       <h2>SquadMaker</h2>
+      <Capture />
       <div className="tab_menu">
         <button
           className={activeTab === 1 ? "active" : ""}
@@ -188,10 +192,10 @@ const App = () => (
               <img src="/images/champ_logo.png" alt="" />
             </Link>
             <span className="loginArea">
-              {/* <Link to="/">
+              <Link to="/">
                 <span>Login</span>
                 <FontAwesomeIcon icon={faUser} style={{ color: "#fff" }} />
-              </Link> */}
+              </Link>
             </span>
           </span>
           <div className="nav_wrap">
