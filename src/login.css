@@ -1,0 +1,16 @@
+.login_container {
+    display: flex;
+    padding: 80px;
+}
+
+.login_left {
+    width: 50%;
+    background: linear-gradient(206.99deg, rgba(167, 116, 181, .4) -2.11%, rgba(199, 235, 252, .4) 53.35%, rgba(120, 211, 184, .4) 112.39%), linear-gradient(0deg, #fff, #fff);
+    padding: 30px;
+}
+
+.login_right {
+    width: 50%;
+    text-align: center;
+    padding: 30px;
+}

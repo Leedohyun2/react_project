@@ -4,6 +4,7 @@ import "./squardMaker.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import LoginComp from "./login.js";
 import DraggableComponent from "./squardMaker";
 import DraggableComponent2 from "./squardMaker2";
 import DraggableComponent3 from "./squardMaker3";
@@ -193,7 +194,7 @@ const App = () => (
               <img src="/images/champ_logo.png" alt="" />
             </Link>
             <span className="loginArea">
-              <Link to="/">
+              <Link to="/LoginComp">
                 <span>Login</span>
                 <FontAwesomeIcon icon={faUser} style={{ color: "#fff" }} />
               </Link>
@@ -223,6 +224,7 @@ const App = () => (
         <Route path="/Matches" element={<Matches />} />
         <Route path="/Groups" element={<Groups />} />
         <Route path="/SquadMaker" element={<SquadMaker />} />
+        <Route path="/LoginComp" element={<LoginComp />} />
       </Routes>
     </div>
 
