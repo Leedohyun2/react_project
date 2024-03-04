@@ -5,11 +5,14 @@
 .sq_maker {
     position: relative;
     margin: 30px;
+    min-width: 1847px;
 }
 
-.sq_maker h2 {
+.sq_maker_wrap h2 {
+    background: #0035d4;
     text-align: center;
     font-size: 44px;
+    color: #fff;
 }
 
 .CLW {
@@ -36,7 +39,7 @@
 }
 
 .draggable-item {
-    width: 150px;
+    width: 180px;
     background: #fff;
     border-radius: 15px;
     text-align: center;
@@ -45,11 +48,31 @@
 .player_list {
     height: 850px;
     background: url('../public/images/squard_bg.png') no-repeat;
-
 }
 
 .player_infor {
     background: rgb(189, 189, 189);
     border-radius: 0 0 15px 15px;
     font-weight: bold;
+}
+
+.sub_zone {
+    position: absolute;
+    right: 55px;
+    bottom: 80px;
+    width: 400px;
+    height: 800px;
+    text-align: center;
+    background: #2D2D2D;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.sub_zone p {
+    color: #fff;
+    padding: 3px;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Noto Sans KR", sans-serif;
+    border-bottom: 1px solid #fff;
 }

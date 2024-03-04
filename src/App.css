@@ -13,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+.all_wrap {
+  min-width: 1907px;
+}
+
 .main_logo {
   display: flex;
   justify-content: center;
@@ -41,7 +45,7 @@ a {
 }
 
 .nav_wrap {
-  background: #012799;
+  background: #033387;
 }
 
 .header_nav {
@@ -59,7 +63,7 @@ a {
 .header_nav ul li a {
   color: #fff;
   padding: 10px;
-  border: 2px solid #012799;
+  border: 2px solid #033387;
 }
 
 .header_nav ul li a:hover {
@@ -72,6 +76,7 @@ a {
   background: url(/public/images/champ_back.jpg);
   background-size: cover;
   color: #fff;
+  min-width: 1907px;
 }
 
 /* 슬릭 css */
@@ -111,6 +116,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .main_img {
@@ -144,6 +150,7 @@ a {
   /* width: 100%; */
   background: #011656;
   padding: 20px;
+  min-width: 1907px;
 }
 
 .footer_container p {

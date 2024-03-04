@@ -4,13 +4,10 @@ import "./squardMaker.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
-import html2canvas from "html2canvas";
-import saveAs from "file-saver";
 import DraggableComponent from "./squardMaker";
 import DraggableComponent2 from "./squardMaker2";
 import DraggableComponent3 from "./squardMaker3";
 import DraggableComponent4 from "./squardMaker4";
-import Capture from "./Capture.js";
 import PauseOnHover from "./slick.js";
 
 const Home = () => (
@@ -50,40 +47,44 @@ const SquadMaker = () => {
   };
 
   return (
-    <div className="sq_maker">
-      <h2>SquadMaker</h2>
-      <Capture />
-      <div className="tab_menu">
-        <button
-          className={activeTab === 1 ? "active" : ""}
-          onClick={() => handleTabClick(1)}
-        >
-          맨체스터 시티
-        </button>
-        <button
-          className={activeTab === 2 ? "active" : ""}
-          onClick={() => handleTabClick(2)}
-        >
-          레알 마드리드
-        </button>
-        <button
-          className={activeTab === 3 ? "active" : ""}
-          onClick={() => handleTabClick(3)}
-        >
-          AT마드리드
-        </button>
-        <button
-          className={activeTab === 4 ? "active" : ""}
-          onClick={() => handleTabClick(4)}
-        >
-          인테르
-        </button>
-      </div>
-      <div className="squard">
-        {activeTab === 1 && <DraggableComponent />}
-        {activeTab === 2 && <DraggableComponent2 />}
-        {activeTab === 3 && <DraggableComponent3 />}
-        {activeTab === 4 && <DraggableComponent4 />}
+    <div className="sq_maker_wrap">
+      <h2>SQUAD MAKER</h2>
+      <div className="sq_maker">
+        <div className="tab_menu">
+          <button
+            className={activeTab === 1 ? "active" : ""}
+            onClick={() => handleTabClick(1)}
+          >
+            맨체스터 시티
+          </button>
+          <button
+            className={activeTab === 2 ? "active" : ""}
+            onClick={() => handleTabClick(2)}
+          >
+            레알 마드리드
+          </button>
+          <button
+            className={activeTab === 3 ? "active" : ""}
+            onClick={() => handleTabClick(3)}
+          >
+            AT마드리드
+          </button>
+          <button
+            className={activeTab === 4 ? "active" : ""}
+            onClick={() => handleTabClick(4)}
+          >
+            인테르
+          </button>
+        </div>
+        <div className="squard">
+          {activeTab === 1 && <DraggableComponent />}
+          {activeTab === 2 && <DraggableComponent2 />}
+          {activeTab === 3 && <DraggableComponent3 />}
+          {activeTab === 4 && <DraggableComponent4 />}
+        </div>
+        <div className="sub_zone">
+          <p>교체 명단</p>
+        </div>
       </div>
     </div>
   );
