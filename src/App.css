@@ -14,7 +14,7 @@ a {
 }
 
 .all_wrap {
-  min-width: 1907px;
+  min-width: 1906px;
 }
 
 .main_logo {
@@ -76,7 +76,7 @@ a {
   background: url(/public/images/champ_back.jpg);
   background-size: cover;
   color: #fff;
-  min-width: 1907px;
+  min-width: 1906px;
 }
 
 /* 슬릭 css */
@@ -149,8 +149,8 @@ a {
   bottom: 0; */
   /* width: 100%; */
   background: #011656;
-  padding: 20px;
-  min-width: 1907px;
+  padding: 20px 0;
+  min-width: 1906px;
 }
 
 .footer_container p {
