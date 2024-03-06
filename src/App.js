@@ -10,11 +10,11 @@ import DraggableComponent2 from "./squardMaker2";
 import DraggableComponent3 from "./squardMaker3";
 import DraggableComponent4 from "./squardMaker4";
 import PauseOnHover from "./slick.js";
-// import SportsNews from "./news.js";
+import SportsNews from "./news.js";
 
 const Home = () => (
   <div className="home_wrap">
-    <PauseOnHover />
+    <PauseOnHover /> 
     <h2 className="CLW">22-23 Champions League Winner</h2>
     <h2 className="CLW">- Manchester City -</h2>
     <div className="main_img">
@@ -30,15 +30,17 @@ const Home = () => (
 );
 
 const Matches = () => (
-  <div>
+  <div> 
     <h2>Matches</h2>
   </div>
 );
 
 const Groups = () => (
-  <div>
-    <h2>Groups</h2>
-    {/* <SportsNews /> */}
+  <div className="keyword_wrap">
+    <h2>UEFA KEYWORD</h2>
+    <div className="keyword_container">
+      <SportsNews />
+    </div>
   </div>
 );
 
@@ -214,10 +216,10 @@ const App = () => (
                   <Link to="/Matches">Matches</Link>
                 </li>
                 <li>
-                  <Link to="/Groups">Groups</Link>
+                  <Link to="/SquadMaker">Squad Maker</Link>
                 </li>
                 <li>
-                  <Link to="/SquadMaker">Squad Maker</Link>
+                  <Link to="/Groups">UEFA Keyword</Link>
                 </li>
               </ul>
             </nav>
