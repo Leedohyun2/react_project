@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import "./squardMaker.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -10,6 +10,7 @@ import DraggableComponent2 from "./squardMaker2";
 import DraggableComponent3 from "./squardMaker3";
 import DraggableComponent4 from "./squardMaker4";
 import PauseOnHover from "./slick.js";
+// import SportsNews from "./news.js";
 
 const Home = () => (
   <div className="home_wrap">
@@ -37,6 +38,7 @@ const Matches = () => (
 const Groups = () => (
   <div>
     <h2>Groups</h2>
+    {/* <SportsNews /> */}
   </div>
 );
 
@@ -190,6 +192,11 @@ const App = () => (
       <header>
         <div className="header_wrap">
           <span className="main_logo">
+            <Link to="/">
+              <span className="uefa_img">
+                <img src="/images/uefa_img.svg" alt="" />
+              </span>
+            </Link>
             <Link to="/">
               <img src="/images/champ_logo.png" alt="" />
             </Link>

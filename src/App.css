@@ -19,10 +19,15 @@ a {
 
 .main_logo {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 100px 0 50px;
   align-items: center;
   background: #011656;
   background-size: cover;
+}
+
+.uefa_img img {
+  width: 80px !important; 
 }
 
 .main_logo img {
@@ -31,11 +36,10 @@ a {
 }
 
 .loginArea {
-  position: absolute;
+  /* position: absolute;
   top: 30px;
-  right: 40px;
-  font-size: 18px;
-
+  right: 40px; */
+  font-size: 26px;
 }
 
 .loginArea span {
