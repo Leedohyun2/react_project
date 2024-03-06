@@ -53,7 +53,9 @@ const SportsNews = () => {
     };
 
     const handleSearch = (e) => {
-        setSearchTerm(e.target.value);
+        const { value } = e.target;
+        console.log('Search Term:', value); // 검색어 확인
+        setSearchTerm(value);
     };
 
     if (loading) {
@@ -67,13 +69,13 @@ const SportsNews = () => {
     return (
         <div>
             <div className="search-bar">
-            <input
-                type="text"
-                value={searchTerm}
-                onChange={handleSearch}
-                placeholder="검색어를 입력하세요"
-            />
-        </div>
+                <input
+                    type="text"
+                    value={searchTerm}
+                    onChange={handleSearch}
+                    placeholder="키워드를 입력하세요"
+                />
+            </div>
             <div className='champs_keyword'>
 
                 <ul>

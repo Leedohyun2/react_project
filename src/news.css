@@ -1,3 +1,4 @@
+
 a {
     text-decoration: none;
     color: #000;
@@ -9,8 +10,10 @@ a {
 
 .keyword_container {
     margin: 80px;
+    padding: 30px;
     background: #fff;
     text-align: center;
+    border: 2px solid #bcbaba;
 } 
 
 .keyword_wrap > h2 {
@@ -35,10 +38,18 @@ a {
     text-align: center;
 }
 
+.search-bar input:focus {
+    border: 2px solid #0035D4;
+}
+
 .keyword_list {
     margin-bottom: 30px;
     padding: 10px;
     /* border-bottom: 1px solid #fff; */
+}
+
+.keyword_list a {
+    font-family: "Noto Sans KR", sans-serif;
 }
 
 .keyword_list a:hover {
@@ -52,6 +63,7 @@ a {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
+    font-family: "Noto Sans KR", sans-serif;
 }
 
 .pagination button:hover {
