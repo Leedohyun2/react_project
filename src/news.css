@@ -9,33 +9,51 @@ a {
 }
 
 .keyword_container {
-    margin: 80px;
-    padding: 30px;
-    background: #fff;
-    text-align: center;
-    border: 2px solid #bcbaba;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    background: #00008B;
 } 
 
 .keyword_wrap > h2 {
     text-align: center;
+    padding: 10px 0;
     font-size: 44px;
     color: #fff;
     background: #0035D4;
 }
 
-.champs_keyword {
-    text-align: center;
+.keyword_container_left {
+    width: 55%;
+    height: 920px;
+    background: #fff;
+    /* border: 2px solid #bcbaba; */
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.keyword_container_right {
+    width: 40%;
+    height: 1300px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
 }
 
 .search-bar {
     display: flex;
     justify-content: right;
     align-items: center;
+    margin: 20px 0;
 }
 
 .search-bar input{
     width: 250px;
     text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #fff;
 }
 
 .search-bar input:focus {
@@ -43,30 +61,34 @@ a {
 }
 
 .keyword_list {
-    margin-bottom: 30px;
-    padding: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
     /* border-bottom: 1px solid #fff; */
 }
 
 .keyword_list a {
     font-family: "Noto Sans KR", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
 }
 
 .keyword_list a:hover {
-    border-bottom: 1px solid #0035D4;
+    border-bottom: 2px solid #0035D4;
 }
 
 .pagination button {
     border: none;
+    border-radius: 10px;
     padding: 10px 20px;
     margin: 30px 15px 0 15px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     font-family: "Noto Sans KR", sans-serif;
 }
 
 .pagination button:hover {
-    background: #0035D4;
+    background: #011656;
     color: #fff;
 }

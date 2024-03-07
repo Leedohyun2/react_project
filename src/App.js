@@ -11,10 +11,11 @@ import DraggableComponent3 from "./squardMaker3";
 import DraggableComponent4 from "./squardMaker4";
 import PauseOnHover from "./slick.js";
 import SportsNews from "./news.js";
+import YoutubeSearch from "./highligit.js";
 
 const Home = () => (
   <div className="home_wrap">
-    <PauseOnHover /> 
+    <PauseOnHover />
     <h2 className="CLW">22-23 Champions League Winner</h2>
     <h2 className="CLW">- Manchester City -</h2>
     <div className="main_img">
@@ -30,8 +31,9 @@ const Home = () => (
 );
 
 const Matches = () => (
-  <div> 
-    <h2>Matches</h2>
+  <div className="highlight_wrap">
+    <h2>Highlight</h2>
+    <YoutubeSearch />
   </div>
 );
 
@@ -39,7 +41,13 @@ const Groups = () => (
   <div className="keyword_wrap">
     <h2>UEFA KEYWORD</h2>
     <div className="keyword_container">
-      <SportsNews />
+      <span className="keyword_container_left">
+        <h2>UEFA Keyword</h2>
+        <SportsNews />
+      </span>
+      <span className="keyword_container_right">
+        <div>ss</div>
+      </span>
     </div>
   </div>
 );

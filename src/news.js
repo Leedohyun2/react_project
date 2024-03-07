@@ -73,11 +73,10 @@ const SportsNews = () => {
                     type="text"
                     value={searchTerm}
                     onChange={handleSearch}
-                    placeholder="키워드를 입력하세요"
+                    placeholder=" - 키워드를 입력하세요 - "
                 />
             </div>
             <div className='champs_keyword'>
-
                 <ul>
                     {newsList.map((news, index) => (
                         <li className='keyword_list' key={index}>
