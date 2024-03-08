@@ -1,5 +1,6 @@
 .highlight_wrap {
     padding: 50px;
+    background: #00008B;
 }
 
 .highlight_container {
@@ -8,6 +9,62 @@
     align-items: center;
 }
 
-.highlight_wrap h2 {
-    padding: 20px 0;
+.highlight_allwrap {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.highlight_api {
+    overflow: scroll;
+    background: #fff;
+}
+
+.highlight_api::-webkit-scrollbar {
+    width: 0;
+    height: 15px;
+    background: #f0f0f0;
+}
+
+.highlight_api::-webkit-scrollbar-thumb {
+    background: #9e9e9e;
+}
+
+.highlight_api::-webkit-scrollbar-thumb:hover {
+    background: #0035D4;
+}
+
+.highlight_api ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.highlight_api ul li {
+    width: 650px;
+    padding: 15px;
+}
+
+.match_view {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.match_view p {
+    font-weight: bold;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.match_view a {
+    border-bottom: 2px solid #fff;
+    font-weight: bold;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.match_view a:hover {
+    border-bottom: 2px solid #0035D4;
+}
+
+.match_name {
+    width: 500px;
 }

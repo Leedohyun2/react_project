@@ -84,6 +84,15 @@ a {
   min-width: 1906px;
 }
 
+.main_player {
+  margin: 20px 0;
+}
+
+.main_player img {
+  width: 40%;
+  border-radius: 20px;
+}
+
 /* 슬릭 css */
 .slider-container {
   width: 80%;
