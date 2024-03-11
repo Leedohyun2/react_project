@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import "./squardMaker.css";
+import "./youtube.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
@@ -12,6 +13,7 @@ import DraggableComponent4 from "./squardMaker4";
 import PauseOnHover from "./slick.js";
 import SportsNews from "./news.js";
 import ChampionsAPI from "./highligit.js";
+import YoutubeApi from "./youtube.js";
 
 const Home = () => (
   <div className="home_wrap">
@@ -35,7 +37,10 @@ const Home = () => (
 
 const Matches = () => (
   <div className="highlight_wrap">
+    <h1>Weekly Match</h1>
     <ChampionsAPI />
+    <h1>Weekly Highlight</h1>
+    <YoutubeApi />
   </div>
 );
 
