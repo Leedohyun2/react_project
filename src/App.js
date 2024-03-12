@@ -23,6 +23,7 @@ import YoutubeApi from "./youtube.js";
 import LeagueRanking from "./ranking.js";
 import LeagueRanking2 from "./raking2.js";
 import LeagueRanking3 from "./ranking3.js";
+import LeagueRanking4 from "./ranking4.js";
 
 const Home = () => (
   <div className="home_wrap">
@@ -44,27 +45,33 @@ const Home = () => (
   </div>
 );
 
-const Matches = () => (
-  <div className="matches_wrap">
-    <div className="highlight_wrap">
-      <h1>League Ranking</h1>
-      <div className="select_league">
-        <ul>
-          <li>프리미어리그</li>
-          <li>라리가</li>
-          <li>세리에A</li>
-        </ul>
+const Matches = () => {
+  const [activeTab, setActiveTab] = useState(1);
+
+  return (
+    <div className="matches_wrap">
+      <div className="highlight_wrap">
+        <h1>League Ranking</h1>
+        <div className="select_league">
+          <ul>
+            <li onClick={() => setActiveTab(1)} className={activeTab === 1 ? "active" : ""}>프리미어리그</li>
+            <li onClick={() => setActiveTab(2)} className={activeTab === 2 ? "active" : ""}>라리가</li>
+            <li onClick={() => setActiveTab(3)} className={activeTab === 3 ? "active" : ""}>세리에A</li>
+            <li onClick={() => setActiveTab(4)} className={activeTab === 4 ? "active" : ""}>분데스리가</li>
+          </ul>
+        </div>
+        {activeTab === 1 && <LeagueRanking />}
+        {activeTab === 2 && <LeagueRanking2 />}
+        {activeTab === 3 && <LeagueRanking3 />}
+        {activeTab === 4 && <LeagueRanking4 />}
+        <h1>Weekly Match</h1>
+        <ChampionsAPI />
+        <h1>Weekly Highlight</h1>
+        {/* <YoutubeApi /> */}
       </div>
-      <LeagueRanking />
-      <LeagueRanking2 />
-      <LeagueRanking3 />
-      <h1>Weekly Match</h1>
-      <ChampionsAPI />
-      <h1>Weekly Highlight</h1>
-      <YoutubeApi />
     </div>
-  </div>
-);
+  );
+};
 
 const Groups = () => (
   <div className="keyword_wrap">
