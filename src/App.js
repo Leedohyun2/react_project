@@ -61,7 +61,7 @@ const Matches = () => (
       <h1>Weekly Match</h1>
       <ChampionsAPI />
       <h1>Weekly Highlight</h1>
-      {/* <YoutubeApi /> */}
+      <YoutubeApi />
     </div>
   </div>
 );
