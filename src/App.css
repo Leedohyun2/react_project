@@ -93,6 +93,31 @@ a {
   border-radius: 20px;
 }
 
+/* matches css */
+.select_league {
+  background: #fff;
+  border-radius: 15px 15px 0 0;
+}
+
+.select_league ul {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.select_league ul li {
+  cursor: pointer;
+  font-size: 22px;
+  font-family: "Noto Sans KR", sans-serif;
+  border-bottom: 2px solid #fff;
+  margin: 5px 20px 15px 20px;
+  padding: 10px 10px 5px 10px;
+}
+
+.select_league ul li:hover {
+  border-bottom: 2px solid #00008B;
+}
+
 /* 슬릭 css */
 .slider-container {
   width: 80%;
@@ -158,10 +183,15 @@ a {
   width: 80px;
 }
 
+/* matches css */
+.matches_right {
+  background: #E1E1E1;
+}
+
 .footer_container {
   /* position: fixed;
-  bottom: 0; */
-  /* width: 100%; */
+  bottom: 0;
+  width: 100%; */
   background: linear-gradient(135deg, #00CED1, #00008B 20%, #00008B 60%, #9400D3);
   padding: 20px 0;
   min-width: 1906px;

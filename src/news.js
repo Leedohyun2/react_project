@@ -8,7 +8,7 @@ const SportsNews = () => {
     const [loading, setLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
     const [searchTerm, setSearchTerm] = useState(''); // 검색어 상태 추가
-    const pageSize = 15; // 한 페이지에 보여질 뉴스의 수
+    const pageSize = 10; // 한 페이지에 보여질 뉴스의 수
     const KAKAO_API_KEY = '53369c67277ee43eb47e88be1f6c6dce'; // 카카오 REST API 키
     const query = 'UEFA'; // 기본 검색어
 

@@ -41,13 +41,13 @@ function ChampionsAPI() {
           {videos.map((video, index) => (
             <li key={index}>
               <div className="match_name">
-                <h3>경기: {video.title}</h3>
+                <h3>{video.title}</h3>
               </div>
               {/* <div>Description: {video.description}</div> */}
               <div className="match_view">
-                <h3>하이라이트 보기 :</h3>{" "}
+                <h3>하이라이트 보기 :</h3>
                 <a href={video.url} target="blank">
-                  <h3>경기정보 보기</h3>
+                  <h4>경기정보 보기</h4>
                 </a>
               </div>
             </li>

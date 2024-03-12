@@ -2,7 +2,13 @@ import React, { useState } from "react";
 import "./App.css";
 import "./squardMaker.css";
 import "./youtube.css";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  BrowserRouter,
+} from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import LoginComp from "./login.js";
@@ -14,13 +20,16 @@ import PauseOnHover from "./slick.js";
 import SportsNews from "./news.js";
 import ChampionsAPI from "./highligit.js";
 import YoutubeApi from "./youtube.js";
+import LeagueRanking from "./ranking.js";
+import LeagueRanking2 from "./raking2.js";
+import LeagueRanking3 from "./ranking3.js";
 
 const Home = () => (
   <div className="home_wrap">
     <PauseOnHover />
-    <div className="main_player">
+    {/* <div className="main_player">
       <img src="/images/champs_intro.gif" alt="" />
-    </div>
+    </div> */}
     <h2 className="CLW">22-23 Champions League Winner</h2>
     <h2 className="CLW">- Manchester City -</h2>
     <div className="main_img">
@@ -36,11 +45,24 @@ const Home = () => (
 );
 
 const Matches = () => (
-  <div className="highlight_wrap">
-    <h1>Weekly Match</h1>
-    <ChampionsAPI />
-    <h1>Weekly Highlight</h1>
-    <YoutubeApi />
+  <div className="matches_wrap">
+    <div className="highlight_wrap">
+      <h1>League Ranking</h1>
+      <div className="select_league">
+        <ul>
+          <li>프리미어리그</li>
+          <li>라리가</li>
+          <li>세리에A</li>
+        </ul>
+      </div>
+      <LeagueRanking />
+      <LeagueRanking2 />
+      <LeagueRanking3 />
+      <h1>Weekly Match</h1>
+      <ChampionsAPI />
+      <h1>Weekly Highlight</h1>
+      {/* <YoutubeApi /> */}
+    </div>
   </div>
 );
 
@@ -203,7 +225,7 @@ const Footer = () => (
 );
 
 const App = () => (
-  <Router>
+  <BrowserRouter>
     <div className="all_wrap">
       {/* 헤더 */}
       <header>
@@ -250,11 +272,13 @@ const App = () => (
         <Route path="/SquadMaker" element={<SquadMaker />} />
         <Route path="/LoginComp" element={<LoginComp />} />
       </Routes>
+
+      {/* 중첩 라우팅 설정 */}
     </div>
 
     {/* Footer */}
     <Footer />
-  </Router>
+  </BrowserRouter>
 );
 
 export default App;

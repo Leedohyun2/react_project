@@ -14,8 +14,8 @@ const VideoGallery = () => {
           {
             params: {
               part: 'snippet',
-              maxResults: 10, // 가져올 동영상의 최대 수
-              q: '23/24 챔피언스리그', // 검색어
+              maxResults: 7, // 가져올 동영상의 최대 수
+              q: '23/24 챔피언스리그 주요장면', // 검색어
               type: 'video',
               order: 'date', // 최신순으로 정렬
               key: 'AIzaSyAugnYjF8d3OVwC6l_RuCLpjJUBxNVwlrM',

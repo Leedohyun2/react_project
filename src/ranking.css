@@ -1,0 +1,72 @@
+.ranking_wrap {
+    background: #E1E1E1;
+    padding: 50px;
+    border-radius: 0 0 15px 15px;
+}
+
+.ranking_wrap h2 {
+    margin: 15px 0;
+}
+
+.rank_top {
+    background: #b8b8b8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.rank_top ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rank_top ul li {
+    font-weight: bold;
+    margin: 0 50px;
+    padding: 8px;
+}
+
+.team_rank {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
+
+.team_rank ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team_rank ul li {
+    margin: 0 55px;
+    padding: 8px;
+}
+
+.rank_team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.rank_team img {
+    width: 35px;
+}
+
+.more_btn {
+    width: 120px;
+    height: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+
+.more_btn:hover {
+    background: #00008B;
+    color: #fff;
+}
