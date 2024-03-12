@@ -75,7 +75,7 @@ const Groups = () => (
         <SportsNews />
       </span>
       <span className="keyword_container_right">
-        <div>ss</div>
+        <div>sss</div>
       </span>
     </div>
   </div>
