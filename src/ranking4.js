@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ranking.css";
 
-function LeagueRanking4() {
+function LeagueRanking() {
   const teams = [
     {
       name: "바이어 레버쿠젠",
@@ -167,6 +167,11 @@ function LeagueRanking4() {
       },
   ];
 
+  // 각 팀의 포인트 계산
+  teams.forEach(team => {
+    team.points = team.wins * 3 + team.draws;
+  });
+
   const [visibleRank, setVisibleRank] = useState(10);
 
   const handleShowMore = () => {
@@ -224,4 +229,4 @@ function LeagueRanking4() {
   );
 }
 
-export default LeagueRanking4;
+export default LeagueRanking;

@@ -185,6 +185,11 @@ function LeagueRanking() {
       },
   ];
 
+  // 각 팀의 포인트 계산
+  teams.forEach(team => {
+    team.points = team.wins * 3 + team.draws;
+  });
+
   const [visibleRank, setVisibleRank] = useState(10);
 
   const handleShowMore = () => {

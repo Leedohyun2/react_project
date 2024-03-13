@@ -58,6 +58,18 @@
     width: 35px;
 }
 
+.rank_team p {
+    width: 400px;
+}
+
+.team_rank ul:first-child {
+    width: 700px;
+}
+
+.team_rank ul:last-child {
+    width: 690px;
+}
+
 .more_btn {
     width: 120px;
     height: 35px;

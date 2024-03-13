@@ -9,7 +9,7 @@ a {
 }
 
 .keyword_container {
-    padding: 30px 100px;
+    padding: 50px 60px;
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
@@ -25,7 +25,7 @@ a {
 }
 
 .keyword_container_left {
-    width: 55%;
+    width: 48%;
     height: 680px;
     background: #fff;
     /* border: 2px solid #bcbaba; */
@@ -34,8 +34,8 @@ a {
 }
 
 .keyword_container_right {
-    width: 40%;
-    height: 1300px;
+    width: 48%;
+    height: 680px;
     background: #fff;
     border-radius: 10px;
     padding: 30px;

@@ -21,7 +21,7 @@ import SportsNews from "./news.js";
 import ChampionsAPI from "./highligit.js";
 import YoutubeApi from "./youtube.js";
 import LeagueRanking from "./ranking.js";
-import LeagueRanking2 from "./raking2.js";
+import LeagueRanking2 from "./ranking2.js";
 import LeagueRanking3 from "./ranking3.js";
 import LeagueRanking4 from "./ranking4.js";
 
@@ -82,7 +82,7 @@ const Groups = () => (
         <SportsNews />
       </span>
       <span className="keyword_container_right">
-        <div>sss</div>
+
       </span>
     </div>
   </div>
@@ -280,7 +280,6 @@ const App = () => (
         <Route path="/LoginComp" element={<LoginComp />} />
       </Routes>
 
-      {/* 중첩 라우팅 설정 */}
     </div>
 
     {/* Footer */}

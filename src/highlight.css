@@ -27,7 +27,8 @@
 
 .highlight_allwrap h3 {
     font-family: "Noto Sans KR", sans-serif;
-    font-size: 22px;
+    font-size: 20px;
+    font-weight: 500;
     color: #000;
     padding: 0 20px 0 10px;
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ranking.css";
 
-function LeagueRanking3() {
+function LeagueRanking() {
   const teams = [
     {
       name: "인테르",
@@ -185,6 +185,11 @@ function LeagueRanking3() {
     },
   ];
 
+  // 각 팀의 포인트 계산
+  teams.forEach(team => {
+    team.points = team.wins * 3 + team.draws;
+  });
+
   const [visibleRank, setVisibleRank] = useState(10);
 
   const handleShowMore = () => {
@@ -200,7 +205,7 @@ function LeagueRanking3() {
   return (
     <div className="ranking_wrap">
       <div>
-        <h2>2023-24 세리아A 종합 순위</h2>
+        <h2>2023-24 세리에A 종합 순위</h2>
         <span className="rank_top">
           <ul>
             <li>순위</li>
@@ -242,4 +247,4 @@ function LeagueRanking3() {
   );
 }
 
-export default LeagueRanking3;
+export default LeagueRanking;
