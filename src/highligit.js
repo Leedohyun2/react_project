@@ -45,7 +45,7 @@ function ChampionsAPI() {
               </div>
               {/* <div>Description: {video.description}</div> */}
               <div className="match_view">
-                <h3>하이라이트 보기 :</h3>
+                {/*<h3>하이라이트 보기 :</h3>*/}
                 <a href={video.url} target="blank">
                   <h4>경기정보 보기</h4>
                 </a>
