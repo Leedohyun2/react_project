@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import Draggable from "react-draggable";
+import React, { useState, useEffect, useRef } from 'react';
+import Draggable from 'react-draggable';
 import "../src/squardMaker.css";
 
 const players = [
@@ -124,7 +124,6 @@ const App = () => {
   });
 
   useEffect(() => {
-    // 선수 정보가 변경될 때마다 로컬 스토리지에 저장
     playersState.forEach((player, index) => {
       localStorage.setItem(`player-${index}`, JSON.stringify({ x: player.defaultPosition.x, y: player.defaultPosition.y }));
     });
@@ -155,13 +154,15 @@ const App = () => {
 };
 
 const DraggableComponent = ({ index, src, ply_position, name, defaultPosition, number, onStop }) => {
+  const draggableRef = useRef(null);
+
   const handleDragStop = (e, ui) => {
     onStop(index, { x: ui.x, y: ui.y });
   };
 
   return (
-    <Draggable onStop={handleDragStop} defaultPosition={defaultPosition}>
-      <div className="draggable-item">
+    <Draggable onStop={handleDragStop} defaultPosition={defaultPosition} nodeRef={draggableRef}>
+      <div className="draggable-item" ref={draggableRef}>
         <img src={src} alt="" />
         <p className="player_infor">
           {ply_position} {name} {number}

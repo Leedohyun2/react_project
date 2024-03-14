@@ -24,6 +24,7 @@ import LeagueRanking from "./ranking.js";
 import LeagueRanking2 from "./ranking2.js";
 import LeagueRanking3 from "./ranking3.js";
 import LeagueRanking4 from "./ranking4.js";
+import Board from "./board.js";
 
 const Home = () => (
   <div className="home_wrap">
@@ -82,7 +83,7 @@ const Groups = () => (
         <SportsNews />
       </span>
       <span className="keyword_container_right">
-
+        <Board />
       </span>
     </div>
   </div>

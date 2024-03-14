@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Draggable from "react-draggable";
 import "../src/squardMaker.css";
 
@@ -148,13 +148,15 @@ const App = () => {
 };
 
 const DraggableComponent2 = ({ index, src, ply_position, name, defaultPosition, number, onStop }) => {
+  const nodeRef = useRef(null); // ref 생성
+
   const handleDragStop = (e, ui) => {
     onStop(index, { x: ui.x, y: ui.y });
   };
 
   return (
-    <Draggable onStop={handleDragStop} defaultPosition={defaultPosition}>
-      <div className="draggable-item">
+    <Draggable onStop={handleDragStop} defaultPosition={defaultPosition} nodeRef={nodeRef}>
+      <div className="draggable-item" ref={nodeRef}> {/* ref 추가 */}
         <img src={src} alt="" />
         <p className="player_infor">
           {ply_position} {name} {number}
