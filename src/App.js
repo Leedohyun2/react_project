@@ -80,12 +80,12 @@ const Groups = () => (
   <div className="keyword_wrap">
     <h2>UEFA KEYWORD</h2>
     <div className="keyword_container">
+      <span className="keyword_container_right">
+        <Board />
+      </span>
       <span className="keyword_container_left">
         <h2>UEFA Keyword</h2>
         <SportsNews />
-      </span>
-      <span className="keyword_container_right">
-        <Board />
       </span>
     </div>
   </div>
