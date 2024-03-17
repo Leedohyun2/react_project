@@ -1,0 +1,57 @@
+.login_wrap {
+    text-align: center;
+    height: 600px;
+    padding: 50px;
+    background: #EBEBEB;
+}
+
+.login_wrap h2 {
+    margin-bottom: 40px;
+}
+
+.login_container {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_container form{
+    display: grid;
+    width: 300px;
+}
+
+.login_container form input {
+    margin-bottom: 15px;
+    height: 50px;
+    border: none;
+    padding: 15px;
+}
+
+.login_btn {
+    margin: 15px 0;
+    padding: 10px;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+}
+
+.signup_btn {
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 50px; */
+    width: 600px;
+}
+
+.signup_btn button {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+}
+
+.logout_container > p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}

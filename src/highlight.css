@@ -26,6 +26,7 @@
 }
 
 .highlight_allwrap h3 {
+    text-align: center;
     font-family: "Noto Sans KR", sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -62,16 +63,16 @@
 
 .highlight_api ul li {
     width: 650px;
-    padding: 10px;
-    margin: 10px 40px 10px 0;
+    padding: 20px;
+    margin: 30px 40px 20px 0;
     /* border-radius: 15px; */
-    /* border: 2px solid #9e9e9e; */
+    border: 2px solid #9e9e9e;
     background: #ffffff;
 }
 
 .match_view {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
 }
 
@@ -88,6 +89,10 @@
 
 .match_view a:hover {
     border-bottom: 2px solid #0035D4;
+}
+
+.match_view a h4 {
+    font-size: 23px;
 }
 
 .match_name {

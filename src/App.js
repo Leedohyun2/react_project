@@ -11,7 +11,8 @@ import {
 } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
-import LoginComp from "./login.js";
+import Login from "./LoginComp.js";
+import Signup from "./Sighup.js";
 import DraggableComponent from "./squardMaker";
 import DraggableComponent2 from "./squardMaker2";
 import DraggableComponent3 from "./squardMaker3";
@@ -51,6 +52,7 @@ const Matches = () => {
 
   return (
     <div className="matches_wrap">
+      <h2>Matches</h2>
       <div className="highlight_wrap">
         <h1>League Ranking</h1>
         <div className="select_league">
@@ -248,7 +250,7 @@ const App = () => (
               <img src="/images/champ_logo.png" alt="" />
             </Link>
             <span className="loginArea">
-              <Link to="/LoginComp">
+              <Link to="/Login">
                 <span>Login</span>
                 <FontAwesomeIcon icon={faUser} style={{ color: "#fff" }} />
               </Link>
@@ -278,7 +280,8 @@ const App = () => (
         <Route path="/Matches" element={<Matches />} />
         <Route path="/Groups" element={<Groups />} />
         <Route path="/SquadMaker" element={<SquadMaker />} />
-        <Route path="/LoginComp" element={<LoginComp />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Signup" element={<Signup />} />
       </Routes>
 
     </div>

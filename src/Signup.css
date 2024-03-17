@@ -1,0 +1,45 @@
+.signup_wrap {
+    text-align: center;
+    height: 600px;
+    padding: 50px;
+    background: #EBEBEB;
+}
+
+.signup_wrap h2 {
+    margin-bottom: 40px;
+}
+
+.signup_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup_container form{
+    display: grid;
+    width: 300px;
+}
+
+.signup_container form input {
+    margin-bottom: 15px;
+    height: 50px;
+    border: none;
+    padding: 15px;
+}
+
+.signup_btn {
+    margin: 15px 0;
+    padding: 10px;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+}
+
+.signup_container button {
+    width: 300px;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+}

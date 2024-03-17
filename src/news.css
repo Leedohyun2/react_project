@@ -33,14 +33,6 @@ a {
     padding: 30px;
 }
 
-.keyword_container_right {
-    width: 48%;
-    height: 680px;
-    background: #fff;
-    border-radius: 10px;
-    padding: 30px;
-}
-
 /* .search-bar {
     display: flex;
     justify-content: right;
