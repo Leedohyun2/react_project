@@ -164,12 +164,16 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
+}
+
+.main_imgs img {
+  height: 550px;
 }
 
 .main_img {
   /* background: red; */
-  width: 50%;
+  /* width: 50%; */
   margin: 40px;
   color: #fff;
   font-size: 25px;

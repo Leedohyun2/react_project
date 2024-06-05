@@ -33,12 +33,12 @@ const Home = () => (
     {/* <div className="main_player">
       <img src="/images/champs_intro.gif" alt="" />
     </div> */}
-    <h2 className="CLW">22-23 Champions League Winner</h2>
-    <h2 className="CLW">- Manchester City -</h2>
+    <h2 className="CLW">23 - 24 Champions League Winner</h2>
+    <h2 className="CLW">- Real Madrid -</h2>
     <div className="main_img">
       <span className="main_imgs">
-        <img src="/images/mancity_winner.jpg" alt="" />
-        <img src="/images/city_champion.jpg" alt="" />
+        <img src="/images/real_champion2.jpg" alt="" />
+        <img src="/images/real_champion.jpg" alt="" />
       </span>
     </div>
     <div className="banner">
@@ -70,7 +70,7 @@ const Matches = () => {
         <h1>Weekly Match</h1>
         <ChampionsAPI />
         <h1>Weekly Highlight</h1>
-        {/* <YoutubeApi /> */}
+        <YoutubeApi />
       </div>
     </div>
   );

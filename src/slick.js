@@ -17,6 +17,13 @@ function PauseOnHover() {
   return (
     <div className="slider-container">
       <Slider {...settings}>
+      <div className="team_container">
+          <h2>2023 - 2024 우승</h2>
+          <h3>레알 마드리드</h3>
+          <span className="team_img">
+            <img src="/team_logo/real_logo-removebg-preview.png" alt="" />
+          </span>
+        </div>
         <div className="team_container">
           <h2>2022 - 2023 우승</h2>
           <h3>맨체스터 시티</h3>
