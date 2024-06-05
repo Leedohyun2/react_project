@@ -37,8 +37,8 @@ const Home = () => (
     <h2 className="CLW">- Real Madrid -</h2>
     <div className="main_img">
       <span className="main_imgs">
-        <img src="/images/real_champion2.jpg" alt="" />
         <img src="/images/real_champion.jpg" alt="" />
+        <img src="/images/real_champion2.jpg" alt="" />
       </span>
     </div>
     <div className="banner">
@@ -57,10 +57,30 @@ const Matches = () => {
         <h1>League Ranking</h1>
         <div className="select_league">
           <ul>
-            <li onClick={() => setActiveTab(1)} className={activeTab === 1 ? "active" : ""}>프리미어리그</li>
-            <li onClick={() => setActiveTab(2)} className={activeTab === 2 ? "active" : ""}>라리가</li>
-            <li onClick={() => setActiveTab(3)} className={activeTab === 3 ? "active" : ""}>세리에A</li>
-            <li onClick={() => setActiveTab(4)} className={activeTab === 4 ? "active" : ""}>분데스리가</li>
+            <li
+              onClick={() => setActiveTab(1)}
+              className={activeTab === 1 ? "active" : ""}
+            >
+              프리미어리그
+            </li>
+            <li
+              onClick={() => setActiveTab(2)}
+              className={activeTab === 2 ? "active" : ""}
+            >
+              라리가
+            </li>
+            <li
+              onClick={() => setActiveTab(3)}
+              className={activeTab === 3 ? "active" : ""}
+            >
+              세리에A
+            </li>
+            <li
+              onClick={() => setActiveTab(4)}
+              className={activeTab === 4 ? "active" : ""}
+            >
+              분데스리가
+            </li>
           </ul>
         </div>
         {activeTab === 1 && <LeagueRanking />}
@@ -94,7 +114,7 @@ const Groups = () => (
 const SquadMaker = () => {
   const [activeTab, setActiveTab] = useState(1);
 
-  const handleTabClick = tabNumber => {
+  const handleTabClick = (tabNumber) => {
     setActiveTab(tabNumber);
   };
 
@@ -283,7 +303,6 @@ const App = () => (
         <Route path="/Login" element={<Login />} />
         <Route path="/Signup" element={<Signup />} />
       </Routes>
-
     </div>
 
     {/* Footer */}
