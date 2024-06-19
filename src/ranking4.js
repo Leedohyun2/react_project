@@ -6,88 +6,88 @@ function LeagueRanking() {
     {
       name: "바이어 레버쿠젠",
       logo: "https://img1.daumcdn.net/thumb/C100x100/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmedia%2Fimg-section%2Fsports13%2Flogo%2Fteam%2F14%2F2681_300300.png&scode=sports",
-      games: 25,
-      wins: 21,
-      draws: 4,
+      games: 34,
+      wins: 28,
+      draws: 6,
       losses: 0,
-      points: 67
+      points: 90
     },
     {
       name: "바이에른 뮌헨",
       logo: "https://img1.daumcdn.net/thumb/C100x100/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmedia%2Fimg-section%2Fsports13%2Flogo%2Fteam%2F14%2F2672_300300.png&scode=sports",
-      games: 25,
-      wins: 18,
+      games: 34,
+      wins: 23,
       draws: 3,
-      losses: 4,
-      points: 57
+      losses: 8,
+      points: 72
     },
     {
         name: "슈투르가르트",
         logo: "https://img1.daumcdn.net/thumb/C100x100/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmedia%2Fimg-section%2Fsports13%2Flogo%2Fteam%2F14%2F2677_300300.png&scode=sports",
-        games: 25,
-        wins: 17,
-        draws: 2,
-        losses: 6,
-        points: 53
+        games: 34,
+        wins: 23,
+        draws: 4,
+        losses: 7,
+        points: 73
       },
       {
         name: "도르트문트",
         logo: "https://img1.daumcdn.net/thumb/C100x100/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmedia%2Fimg-section%2Fsports13%2Flogo%2Fteam%2F14%2F2673_300300.png&scode=sports",
-        games: 25,
-        wins: 13,
-        draws: 8,
-        losses: 4,
-        points: 47
+        games: 34,
+        wins: 18,
+        draws: 9,
+        losses: 7,
+        points: 63
       },
       {
         name: "라이프치히",
         logo: "https://img1.daumcdn.net/thumb/C100x100/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmedia%2Fimg-section%2Fsports13%2Flogo%2Fteam%2F14%2F36360_300300.png&scode=sports",
-        games: 25,
-        wins: 16,
-        draws: 5,
-        losses: 6,
-        points: 53
+        games: 34,
+        wins: 18,
+        draws: 9,
+        losses: 7,
+        points: 65
       },
       {
         name: "프랑크푸르트",
         logo: "https://img1.daumcdn.net/thumb/C100x100/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmedia%2Fimg-section%2Fsports13%2Flogo%2Fteam%2F14%2F2674_300300.png&scode=sports",
-        games: 25,
-        wins: 10,
-        draws: 10,
-        losses: 5,
-        points: 40
+        games: 34,
+        wins: 11,
+        draws: 14,
+        losses: 9,
+        points: 47
       },
       {
         name: "호펜하임",
         logo: "https://img1.daumcdn.net/thumb/C100x100/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmedia%2Fimg-section%2Fsports13%2Flogo%2Fteam%2F14%2F2569_300300.png&scode=sports",
-        games: 25,
-        wins: 9,
-        draws: 6,
-        losses: 10,
-        points: 33
+        games: 34,
+        wins: 13,
+        draws: 7,
+        losses: 14,
+        points: 46
       },
       {
         name: "프라이부르크",
         logo: "https://img1.daumcdn.net/thumb/C100x100/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmedia%2Fimg-section%2Fsports13%2Flogo%2Fteam%2F14%2F2538_300300.png&scode=sports",
-        games: 25,
-        wins: 9,
-        draws: 6,
-        losses: 10,
-        points: 33
+        games: 34,
+        wins: 11,
+        draws: 9,
+        losses: 14,
+        points: 42
       },
       {
         name: "아우크스부르크",
         logo: "https://img1.daumcdn.net/thumb/C100x100/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmedia%2Fimg-section%2Fsports13%2Flogo%2Fteam%2F14%2F2600_300300.png&scode=sports",
-        games: 25,
-        wins: 8,
-        draws: 8,
-        losses: 9,
-        points: 32
+        games: 34,
+        wins: 10,
+        draws: 9,
+        losses: 15,
+        points: 39
       },
       {
         name: "베르더 브레멘",
         logo: "https://img1.daumcdn.net/thumb/C100x100/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmedia%2Fimg-section%2Fsports13%2Flogo%2Fteam%2F14%2F2534_300300.png&scode=sports",
-        games: 25,
+        games: 34,
         wins: 8,
         draws: 6,
         losses: 11,
@@ -96,7 +96,7 @@ function LeagueRanking() {
       {
         name: "하이덴하임",
         logo: "https://img1.daumcdn.net/thumb/C100x100/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmedia%2Fimg-section%2Fsports13%2Flogo%2Fteam%2F14%2F5885_300300.png&scode=sports",
-        games: 25,
+        games: 34,
         wins: 7,
         draws: 7,
         losses: 11,
@@ -105,65 +105,65 @@ function LeagueRanking() {
       {
         name: "묀헨글라트바흐",
         logo: "https://img1.daumcdn.net/thumb/C100x100/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmedia%2Fimg-section%2Fsports13%2Flogo%2Fteam%2F14%2F2527_300300.png&scode=sports",
-        games: 25,
-        wins: 6,
-        draws: 9,
-        losses: 10,
-        points: 27
+        games: 34,
+        wins: 7,
+        draws: 13,
+        losses: 14,
+        points: 34
       },
       {
         name: "볼프스부르크",
         logo: "https://img1.daumcdn.net/thumb/C100x100/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmedia%2Fimg-section%2Fsports13%2Flogo%2Fteam%2F14%2F2524_300300.png&scode=sports",
-        games: 25,
-        wins: 6,
+        games: 34,
+        wins: 10,
         draws: 7,
-        losses: 12,
-        points: 25
+        losses: 17,
+        points: 37
       },
       {
         name: "우니온 베를린",
         logo: "https://img1.daumcdn.net/thumb/C100x100/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmedia%2Fimg-section%2Fsports13%2Flogo%2Fteam%2F14%2F2547_300300.png&scode=sports",
-        games: 25,
-        wins: 7,
-        draws: 4,
-        losses: 14,
-        points: 25
+        games: 34,
+        wins: 9,
+        draws: 6,
+        losses: 19,
+        points: 33
       },
       {
         name: "Vfl 보훔",
         logo: "https://img1.daumcdn.net/thumb/C100x100/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmedia%2Fimg-section%2Fsports13%2Flogo%2Fteam%2F14%2F2542_300300.png&scode=sports",
-        games: 25,
+        games: 34,
         wins: 7,
-        draws: 5,
-        losses: 16,
-        points: 25
+        draws: 12,
+        losses: 15,
+        points: 33
       },
       {
         name: "쾰른",
         logo: "https://img1.daumcdn.net/thumb/C100x100/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmedia%2Fimg-section%2Fsports13%2Flogo%2Fteam%2F14%2F2671_300300.png&scode=sports",
-        games: 25,
-        wins: 3,
-        draws: 9,
-        losses: 13,
-        points: 18
+        games: 34,
+        wins: 5,
+        draws: 12,
+        losses: 17,
+        points: 27
       },
       {
         name: "마인츠",
         logo: "https://img1.daumcdn.net/thumb/C100x100/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmedia%2Fimg-section%2Fsports13%2Flogo%2Fteam%2F14%2F2556_300300.png&scode=sports",
-        games: 25,
-        wins: 2,
-        draws: 10,
+        games: 34,
+        wins: 7,
+        draws: 14,
         losses: 13,
-        points: 16
+        points: 35
       },
       {
         name: "다름슈타트",
         logo: "https://img1.daumcdn.net/thumb/C100x100/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmedia%2Fimg-section%2Fsports13%2Flogo%2Fteam%2F14%2F2576_300300.png&scode=sports",
-        games: 25,
-        wins: 2,
-        draws: 7,
-        losses: 16,
-        points: 13
+        games: 34,
+        wins: 3,
+        draws: 8,
+        losses: 23,
+        points: 17
       },
   ];
 

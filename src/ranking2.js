@@ -96,7 +96,7 @@ function LeagueRanking() {
     {
       name: "비야레알",
       logo: "https://ssl.gstatic.com/onebox/media/sports/logos/WKH7Ak5cYD6Qm1EEqXzmVw_48x48.png",
-      games: 27,
+      games: 38,
       wins: 14,
       draws: 11,
       losses: 13,
@@ -114,7 +114,7 @@ function LeagueRanking() {
     {
       name: "알라베스",
       logo: "https://ssl.gstatic.com/onebox/media/sports/logos/meAnutdPID67rfUecKaoFg_48x48.png",
-      games: 27,
+      games: 38,
       wins: 12,
       draws: 10,
       losses: 16,
@@ -159,7 +159,7 @@ function LeagueRanking() {
     {
       name: "카디스",
       logo: "https://ssl.gstatic.com/onebox/media/sports/logos/H1vdTrUUqJBeUW1HfbW0nQ_48x48.png",
-      games: 27,
+      games: 38,
       wins: 6,
       draws: 15,
       losses: 17,
