@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getDatabase, ref, push, onValue, update, remove, serverTimestamp, off } from 'firebase/database';
-import { firebase, auth } from './firebase'; 
-import './board.css'
+import { auth } from './firebase'; 
+import './board.css';
 
 const Board = () => {
   const [title, setTitle] = useState('');
@@ -39,6 +39,9 @@ const Board = () => {
     e.preventDefault();
     const db = getDatabase();
     try {
+      if (!currentUser) {
+        throw new Error("로그인 필요");
+      }
       await push(ref(db, 'posts'), {
         title,
         content,
@@ -66,6 +69,9 @@ const Board = () => {
   const handleUpdate = async () => {
     const db = getDatabase();
     try {
+      if (!editingPost) {
+        throw new Error("수정할 게시글이 없습니다.");
+      }
       await update(ref(db, `posts/${editingPost.id}`), {
         title,
         content
@@ -112,7 +118,6 @@ const Board = () => {
           <div className='board_list' key={post.id}>
             <h4>{post.title}</h4>
             <h5>{post.content}</h5>
-            {/* <p>작성자: {post.userId}</p> */}
             <p>작성 일시: {new Date(post.createdAt).toLocaleString()}</p>
             {currentUser && post.userId === currentUser.uid && (
               <div className='ud_btn'>
